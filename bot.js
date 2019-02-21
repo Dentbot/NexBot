@@ -156,13 +156,13 @@ client.on("message", message => {
 	         Please Chose: 
 
 			 
-${prefix}help-public ⇏ اوامر عامة
+${prefix}help-public => اوامر عامة
 
-${prefix}help-admin ⇏ اوامر ادارة السيرفر
+${prefix}help-admin => اوامر ادارة السيرفر
 			 
-${prefix}help-games ⇏ اوامر الالعاب
+${prefix}help-games => اوامر الالعاب
 
-${prefix}help-music ⇏ اوامر الموسيقى
+${prefix}help-music => اوامر الموسيقى
 
 	  `)
    message.channel.sendEmbed(embed)
@@ -510,7 +510,7 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
-const adminprefix = "-v";
+const adminprefix = "S";
 const devs = ['252813587188416512','460147724063604747'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
