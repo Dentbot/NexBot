@@ -2432,7 +2432,7 @@ client.on("message", (message) => {
         console.log(`Restarting..`);
         setTimeout(() => {
             client.destroy();
-            client.login('NDcwMjQyOTE0MDIzMjQzNzg2.DjtILQ.GSGZt1p-ybzxrItc2Har3vyQcVo');
+            client.login('NTQ4MjMyNzM2NTAzMTAzNDk5.D1Cezw.lX2rulzW2b_LeFtVJL5MaXPZSHo');
         },3000);
     }
 });
@@ -2706,4 +2706,4 @@ msg.channel.send(`**Bot InviteURL : ** https://discordapp.com/oauth2/authorize?c
 
 
 
-client.login('احم');
+client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
