@@ -511,7 +511,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "S";
-const devs = ['252813587188416512','460147724063604747'];
+const devs = ['461107750320209932','548232736503103499'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -2254,9 +2254,9 @@ client.on('message', message => {
             if(!message.channel.guild) return;
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond: اضغط هنا `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=470242914023243786&permissions=8&scope=bot`)
-        .setThumbnail(" https://cdn.discordapp.com/avatars/377904849783750667/6c76e412f18c142dfd711d05fb363869.png?size=2048")        
+        .setTitle(`اضغط هنا`)
+        .setURL(`https://discordapp.com/oauth2/authorize?client_id=548232736503103499&permissions=8&scope=bot`)
+        .setThumbnail("")        
      message.channel.sendEmbed(embed);
        }
    });
@@ -2460,7 +2460,7 @@ if (!rank) return message.reply('انت لا تمتلك الرتبه المخص�
 });
 
 client.on('message', function(message) {
-	const myID = "252813587188416512";
+	const myID = "548232736503103499";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
